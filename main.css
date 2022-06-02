@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.header {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #002949;
+    color: white;
+}
+.header h1{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.dropdown {
+   margin-top: 9px;
+   margin-right: 20px;
+
+}
+.dropdown button{
+    background-color: #002949;
+    border: none;
+}
+button:focus:not(:focus-visible){
+    background-color: #002949;
+    box-shadow: none;
+}
+.dropdown button:hover{
+    background-color: #ccc;
+}
+/* content  col-2*/
+.col-2{
+    background-color: #002949;
+    height: 100vh;
+}
+.col-2 li{
+    color: white;
+    list-style-type: none;
+    margin-left: 0px;
+}
+ul {
+    padding-left: 0rem !important;
+}
+.col-2 li a{
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+.col-2 >ul > li:hover{
+    background-color: #ccc;
+}
+
+.between{
+    position: relative;
+}
+
+.fa-angle-down,.fa-angle-up{
+    position: absolute;
+    right: 10px;
+    top:5px
+}
+.fa-angle-up{
+    display: none;
+}
+.between li:hover .fa-angle-up{
+    display: block;
+}
+.between li:hover .fa-angle-down{
+    display: none;
+}
+
+/* sub-nav */
+.sub-nav{
+    display: none;
+}
+
+.between li:hover .sub-nav{
+    display: block;
+}
+.sub-between {
+   line-height: 40px;
+}
+.sub-between:hover{
+    background-color: #ccc;
+}
+.sub-nav li{
+    line-height: 40px;
+}
+.sub-nav li:hover{
+    background-color: #ccc;
+}
+/* content col-10 */
+.sub-container{
+    padding: 10px;
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 15px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(65, 54, 54);;
+   
+  }
+  
+  .sub-container button{
+    margin-left: 5px;
+    margin-top: 7px;
+    background-color: rgb(0, 41, 73);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+  .sub-container button:focus{
+    cursor: pointer;
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+  }
+  
+  .sub-container h3{
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 23px;
+  }
+
